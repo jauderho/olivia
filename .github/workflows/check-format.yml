@@ -14,7 +14,7 @@ jobs:
     name: Checks the format
     runs-on: [ubuntu-latest]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Check go fmt
       run: go fmt
     - name: Check go vet
