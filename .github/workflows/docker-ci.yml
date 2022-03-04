@@ -15,7 +15,7 @@ jobs:
       - name: Save the image
         run: docker save -o image.tar docker.pkg.github.com/olivia-ai/olivia/olivia:latest
       - name: Upload image to artifacts
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: image
           path: image.tar
