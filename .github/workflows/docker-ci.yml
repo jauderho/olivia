@@ -9,7 +9,7 @@ jobs:
     name: Builds the Docker image
     runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Build the image
         run: docker build -t docker.pkg.github.com/olivia-ai/olivia/olivia:latest .
       - name: Save the image
